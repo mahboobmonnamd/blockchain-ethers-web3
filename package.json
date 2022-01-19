@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node build/index.js",
     "build": "babel src -d build",
-    "build:w": "babel src --watch -d build"
+    "build:w": "babel src --watch -d build",
+    "sol:test": "cd contracts && npx hardhat test",
+    "sol:compile": "cd contracts && npx hardhat compile"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,9 @@
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
-    "hardhat": "^2.8.2"
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "hardhat": "^2.8.2",
+    "chai": "^4.3.4"
   }
 }

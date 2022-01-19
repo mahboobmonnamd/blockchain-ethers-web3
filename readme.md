@@ -1,0 +1,1 @@
+this project have sample for writing hardhat test case and use of ethers.js to use blockchain.
